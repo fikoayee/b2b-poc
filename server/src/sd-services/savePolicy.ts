@@ -9,7 +9,6 @@ import { fileURLToPath } from 'url'; //_splitter_
 import { SDBaseService } from '../services/SDBaseService'; //_splitter_
 import { TracerService } from '../services/TracerService'; //_splitter_
 import log from '../utils/Logger'; //_splitter_
-import { GenericRDBMSOperations } from '../utils/ndefault-sql/ExecuteSql/GenericRDBMSOperations'; //_splitter_
 //append_imports_end
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -163,7 +162,7 @@ export class savePolicy {
   ${escape(v.status)}
 ) RETURNING id, created_at`;
       this.tracerService.sendData(spanInst, bh);
-      bh = await this.sd_fYvZSYQw9EscQyj8(bh, parentSpanInst);
+      bh = await this.sd_GPNI6SnADlkUz06b(bh, parentSpanInst);
       //appendnew_next_sd_GbwsI6886INMGXe8
       return bh;
     } catch (e) {
@@ -173,48 +172,6 @@ export class savePolicy {
         'sd_GbwsI6886INMGXe8',
         spanInst,
         'sd_GbwsI6886INMGXe8'
-      );
-    }
-  }
-
-  async sd_fYvZSYQw9EscQyj8(bh, parentSpanInst) {
-    const spanInst = this.tracerService.createSpan(
-      'sd_fYvZSYQw9EscQyj8',
-      parentSpanInst
-    );
-    try {
-      let configObj = this.sdService.getConfigObj(
-        'db-config',
-        'sd_5q8tlbf8s5nIY5iq'
-      );
-      let connectionName;
-      if (
-        configObj &&
-        configObj.hasOwnProperty('dbOption') &&
-        configObj.dbOption.hasOwnProperty('name')
-      ) {
-        connectionName = configObj.dbOption.name;
-      } else {
-        throw new Error('Cannot find the selected config name');
-      }
-      let params = [];
-      params = params ? params : [];
-      bh.local.dbResult = await new GenericRDBMSOperations().executeSQL(
-        connectionName,
-        bh.local.queryParams,
-        params
-      );
-      this.tracerService.sendData(spanInst, bh);
-      bh = await this.sd_GPNI6SnADlkUz06b(bh, parentSpanInst);
-      //appendnew_next_sd_fYvZSYQw9EscQyj8
-      return bh;
-    } catch (e) {
-      return await this.errorHandler(
-        bh,
-        e,
-        'sd_fYvZSYQw9EscQyj8',
-        spanInst,
-        'sd_fYvZSYQw9EscQyj8'
       );
     }
   }

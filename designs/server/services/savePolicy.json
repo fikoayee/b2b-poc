@@ -12,41 +12,6 @@
         "relativeParentPath": ""
     },
     {
-        "id": "sd_fYvZSYQw9EscQyj8",
-        "type": "ExecuteSql",
-        "z": "SSD_SERVICE_ID_sd_dtGIqUTM9YiWk3VE",
-        "viewType": "server",
-        "nodeType": "flow",
-        "name": "",
-        "databaseConfig": "sd_5q8tlbf8s5nIY5iq",
-        "resultMap": {
-            "type": "bh.local",
-            "value": "dbResult"
-        },
-        "multipleQuery": "",
-        "singleQuery": {
-            "type": "bh.local",
-            "value": "queryParams"
-        },
-        "inputs": 1,
-        "outputs": 1,
-        "params": [],
-        "dbType": "postgres",
-        "functionName": "sd_fYvZSYQw9EscQyj8",
-        "category": "Storage",
-        "x": 285,
-        "y": 80,
-        "wires": [
-            [
-                "sd_GPNI6SnADlkUz06b"
-            ]
-        ],
-        "__n_excludedFromValidation__": {},
-        "generateNext": false,
-        "serviceName": "savePolicy",
-        "generated": true
-    },
-    {
         "id": "sd_fxht3gMWYhBscB1Y",
         "type": "HttpIn",
         "z": "SSD_SERVICE_ID_sd_dtGIqUTM9YiWk3VE",
@@ -65,6 +30,7 @@
         "acceptFileUpload": false,
         "useDataModel": false,
         "dataModelIsArray": false,
+        "uploadFileOptions": "",
         "erd": "",
         "erdName": "",
         "entity": "",
@@ -297,7 +263,7 @@
         "y": 80,
         "wires": [
             [
-                "sd_fYvZSYQw9EscQyj8"
+                "sd_GPNI6SnADlkUz06b"
             ]
         ],
         "__n_excludedFromValidation__": {},
