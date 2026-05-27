@@ -1,0 +1,13 @@
+{
+    "displayName": "FD-MSJ-Services",
+    "appName": "fd-msj-services",
+    "description": "FD MSJ",
+    "lastModified": "2026-05-25T08:28:07.811Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "apiOnly",
+    "templateName": "blank",
+    "createDate": "2026-05-25T08:28:06.145Z",
+    "analyticsId": "e08172ce-7199-172c-14f5-748ee215b846",
+    "createdStudioVersion": "9.3.0"
+}
