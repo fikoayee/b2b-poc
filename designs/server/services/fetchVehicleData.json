@@ -63,6 +63,7 @@
         "nodeType": "flow",
         "name": "callReels",
         "method": "post",
+        "methodMapping": "",
         "methodMappingObj": {},
         "urlMapping": "\"https://reels-pt.neutrinos-apps.com/integration/api/records/filter/72b58c39-817f-4204-95dc-4f5eec8fd929/0ca3d917-08b1-49f4-85f1-481adc280b06/153d246f-a130-41b7-b952-a3b325779fb9\"",
         "urlMappingObj": {
@@ -70,6 +71,7 @@
             "mapVarValue": "https://reels-pt.neutrinos-apps.com/integration/api/records/filter/72b58c39-817f-4204-95dc-4f5eec8fd929/0ca3d917-08b1-49f4-85f1-481adc280b06/153d246f-a130-41b7-b952-a3b325779fb9"
         },
         "ret": "json",
+        "retMapping": "",
         "retMappingObj": {},
         "reqBody": "bh.local.reelsBody",
         "reqBodyObj": {
@@ -95,11 +97,16 @@
                 "defaultValue": "e803e1c6-f249-4c53-9df9-7ee9d4c598c1.4ff5e9318f47c28660472399a8d6f219f95c0bc0b007a785eae6b63913ad31d4"
             }
         ],
+        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
+        "paramMapping": "",
         "paramMappingObj": {},
+        "authType": "",
         "useAuthTypeMappingObj": {},
+        "useAuthTypeMap": {},
+        "useAuthType": "",
         "useAuthUsername": "",
         "useAuthUsernameMappingObj": "",
         "useAuthPassword": "",
@@ -115,6 +122,7 @@
         "proxy": "",
         "useProxy": false,
         "usetls": false,
+        "cookies": [],
         "cookiesMapObj": {},
         "cookiesList": {},
         "switchStates": {
@@ -231,6 +239,7 @@
             "send": "bh.local.output"
         },
         "dataModelIsArray": false,
+        "cookies": [],
         "inputs": 1,
         "outputs": 0,
         "erd": "",

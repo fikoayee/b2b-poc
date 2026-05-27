@@ -426,10 +426,10 @@
             "dbOption": {
                 "name": "supabaseDb",
                 "type": "postgres",
-                "host": "aws-0-eu-west-1.pooler.supabase.com",
+                "host": "__ssd__env__process.env.db_host__ssd__env__end",
                 "port": 5432,
-                "username": "postgres.owmusukowtsgbvtciqfp",
-                "password": "Farainjaturi37!",
+                "username": "__ssd__env__process.env.postgresUsername__ssd__env__end",
+                "password": "__ssd__env__process.env.postgresPassword__ssd__env__end",
                 "database": "postgres",
                 "schema": "public",
                 "uuidExtension": "",
@@ -519,10 +519,10 @@
             "mariadb_flags": "flags",
             "postgres_name": "supabaseDb",
             "postgres_type": "postgres",
-            "postgres_host": "aws-0-eu-west-1.pooler.supabase.com",
+            "postgres_host": "__ssd__env__process.env.db_host__ssd__env__end",
             "postgres_port": 5432,
-            "postgres_username": "postgres.owmusukowtsgbvtciqfp",
-            "postgres_password": "Farainjaturi37!",
+            "postgres_username": "__ssd__env__process.env.postgresUsername__ssd__env__end",
+            "postgres_password": "__ssd__env__process.env.postgresPassword__ssd__env__end",
             "postgres_database": "postgres",
             "postgres_schema": "public",
             "postgres_uuidExtension": "",
@@ -802,20 +802,20 @@
                     "value": "flags"
                 },
                 "postgres_host": {
-                    "type": "str",
-                    "value": "aws-0-eu-west-1.pooler.supabase.com"
+                    "type": "server_env",
+                    "value": "db_host"
                 },
                 "postgres_port": {
                     "type": "num",
                     "value": 5432
                 },
                 "postgres_username": {
-                    "type": "str",
-                    "value": "postgres.owmusukowtsgbvtciqfp"
+                    "type": "server_env",
+                    "value": "postgresUsername"
                 },
                 "postgres_password": {
-                    "type": "str",
-                    "value": "Farainjaturi37!"
+                    "type": "server_env",
+                    "value": "postgresPassword"
                 },
                 "postgres_database": {
                     "type": "str",

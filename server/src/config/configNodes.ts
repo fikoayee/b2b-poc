@@ -426,10 +426,10 @@ export default {
             "dbOption": {
                 "name": "supabaseDb",
                 "type": "postgres",
-                "host": "aws-0-eu-west-1.pooler.supabase.com",
+                "host": process.env.db_host,
                 "port": 5432,
-                "username": "postgres.owmusukowtsgbvtciqfp",
-                "password": "Farainjaturi37!",
+                "username": process.env.postgresUsername,
+                "password": process.env.postgresPassword,
                 "database": "postgres",
                 "schema": "public",
                 "uuidExtension": "",
@@ -519,10 +519,10 @@ export default {
             "mariadb_flags": "flags",
             "postgres_name": "supabaseDb",
             "postgres_type": "postgres",
-            "postgres_host": "aws-0-eu-west-1.pooler.supabase.com",
+            "postgres_host": process.env.db_host,
             "postgres_port": 5432,
-            "postgres_username": "postgres.owmusukowtsgbvtciqfp",
-            "postgres_password": "Farainjaturi37!",
+            "postgres_username": process.env.postgresUsername,
+            "postgres_password": process.env.postgresPassword,
             "postgres_database": "postgres",
             "postgres_schema": "public",
             "postgres_uuidExtension": "",
@@ -802,20 +802,20 @@ export default {
                     "value": "flags"
                 },
                 "postgres_host": {
-                    "type": "str",
-                    "value": "aws-0-eu-west-1.pooler.supabase.com"
+                    "type": "server_env",
+                    "value": "db_host"
                 },
                 "postgres_port": {
                     "type": "num",
                     "value": 5432
                 },
                 "postgres_username": {
-                    "type": "str",
-                    "value": "postgres.owmusukowtsgbvtciqfp"
+                    "type": "server_env",
+                    "value": "postgresUsername"
                 },
                 "postgres_password": {
-                    "type": "str",
-                    "value": "Farainjaturi37!"
+                    "type": "server_env",
+                    "value": "postgresPassword"
                 },
                 "postgres_database": {
                     "type": "str",
